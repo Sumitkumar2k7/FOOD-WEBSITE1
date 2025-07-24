@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    font-size: 24px;
+    text-decoration: none;
+    color: yellowgreen;
+}
+.logo i{
+    margin-right: 8px;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: 400;
+
+}
+.navbar a:hover{
+    color: #ff9800;
+}
+.menuBtn{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/home.jpg3) right 40% no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+.Home .content{
+    text-align: center;
+    width: 60rem;
+}
+.Home .content h3{
+    color: rgb(8, 0, 0);
+    font-size: 3rem;
+}
+.Home .content h3 span{
+    color: rgb(255, 166, 0);
+}
+.Home .content p{
+    color: #666;
+    font-size: 2rem;
+    padding: 1rem 0;
+    line-height: 1.9rem;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    border: 2px solid #130f40;
+    color: #886e6e;
+    transition: background-color 0.3s ease, color 0.3s ease, transfrom 0.2s ease;
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: orange;
+    color: white;
+    transform: scale(1.03);
+    border-color: orangered;
+}
+
+.Features{
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.Features .heading{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.Features .heading span{
+    color: #ffa500;
+}
+.Features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Features .box{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+}
+.Features .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+.Features .box img{
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.Features .box h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #130f40;
+}
+.Features .box p{
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+.Products{
+    padding: 5rem 2rem;
+    background: white;
+    text-align: center;
+}
+.Products .heading{
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    color: #130f40;
+}
+.Products .heading span{
+    color: #ffa500;
+}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.product-card{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transfrom 0.3s ease;
+}
+.product-card:hover{
+    transform: translateY(-5);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 0.15);
+}
+.product-card img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.product-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+.product-card .price{
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.product-card .stars{
+    color: #f39c12;
+    margin-bottom: 12px;
+}
+.btn{
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background: #de4b0c;
+}
+.Categories{
+    padding: 60px 20px;
+    background: #f8f8f8;
+
+}
+.Categories .heading{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+.Categories .heading span{
+    color: #e67e22;
+}
+.Categories .box-contaiver{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.Categories .box{
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+}
+.Categories .box:hover{
+    transform: translateY(-8);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.Categories .box img{
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px
+}
+.Categories .box h3{
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.Categories .box p{
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+.Categories .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition:  background 0.3s ease;
+}
+.Categories .btn:hover{
+    background: #00b3ff;
+}
+.footer{
+    background: #f8f8f8;
+    padding: 50px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer .box h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-decoration: capitalize;
+}
+.footer .box p{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+
+.footer .box .share a{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background: #333;
+    color: white;
+    text-align: center;
+    margin: 5px 5px 0 0 ;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+.footer .box .share a:hover{
+    background: #0aab4d;
+}
+.footer .box .links{
+    display: block;
+    margin: 8px 0;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer .box .links i{
+    margin-right: 8px;
+    color: #0aab4d;
+}
+.footer .box .links:hover{
+    color: #0aab4d;
+}
+.footer .box .email{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.footer .box .btn{
+    background: #0aab4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+.footer .box .btn:hover{
+    background: #088d3f;
+}
+.footer .box .payment-img{
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 14px;
+}
+.footer .credit a{
+    color: #0aab4d;
+    text-decoration: none;
+}
+
+@media (max-width:780px) {
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        border-top: 1px solid black;
+        display: none;
+    }
+    .navbar.active{
+        display: flex;
+    }
+    .menuBtn{
+        display: block;
+    }
+}
+
+@media (max-width:480px) {
+    .Categories .box{
+        width: 90%;
+    }
+}
+
+@media (max-width:780px) {
+    .product-card{
+        width: 45%;
+    }
+}
+@media (max-width:480px) {
+    .product-card{
+        width: 90%;
+    }
+}
+@media (max-width:1024px) {
+    .Categories .box{
+        width: 220px;
+    }
+}
+@media (max-width:760px) {
+    .Categories .box{
+        width: 45%;
+    }
+}
+@media (max-width:500px) {
+    .Features .heading{
+        font-size: 2.5rem;
+    }
+        .Features .heading h3{
+        font-size: 1.7rem;
+    }
+    .Features .box p{
+        font-size: 1.3rem;
+    }
+
+}
